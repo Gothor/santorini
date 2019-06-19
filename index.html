@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Rodolphe Peccatte - Santorini</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="left"></div>
+    <div id="right"></div>
+
+    <div id="regles">
+        <div class="open"></div>
+
+        <h1>But</h1>
+
+        <p>Monter un de ses pions au 3<sup>e</sup> étage.</p>
+
+        <h1>Règles</h1>
+
+        <p>Chaque joueur joue à tour de rôle, jusqu'à ce qu'un des joueurs amène l'un de ses pions au troisième étage.</p>
+
+        <p>A son tour, le joueur actif doit :</p>
+
+        <ul>
+            <li>Déplacer un de ses personnages sur l'une des 8 cases adjacentes disponibles.</li>
+            <li>Construire un niveau sur l'une des 8 cases adjacentes.</li>
+        </ul>
+
+        <h3>Déplacement</h3>
+
+        <p>Le joueur doit déplacer un de ses pions sur un emplacement adjacent accessible.</p>
+
+        <p>Un emplacement est accessible si :</p>
+
+        <ul>
+            <li>Il n'y a pas d'autre pion dessus.</li>
+            <li>L'emplacement ciblé n'est au maximum surélevé que d'un niveau par rapport à l'emplacement initial.</li>
+        </ul>
+
+        <p>En simple, on peut descendre d'autant qu'étages que l'on souhaite, mais ne monter que d'un niveau à chaque tour.</p>
+
+        <h3>Construction</h3>
+
+        <p>Vous pouvez construire sur l'une des 8 cases adjacentes libre (sans pion dessus), quelque soit sa hauteur.</p>
+
+        <p>Une tour ne peut cependant pas dépasser le 4<sup>e</sup> niveau (un dôme).</p>
+        <h1>Controles</h1>
+
+        <ul>
+            <li><b>Clic gauche</b> : Sélectionner un pion/une case</li>
+            <li><b>Molette</b> : Zoomer/Dézoomer</li>
+            <li><b>Clic milieu</b> : Déplacer le plateau</li>
+            <li><b>Clic droit</b> : Rotation du plateau</li>
+        </ul>
+    </div>
+
+    <script src="js/p5.min.js"></script>
+    <script src="js/Animation.js"></script>
+    <script src="js/AnimationManager.js"></script>
+    <script src="js/bezier.js"></script>
+    <script src="js/sketch.js"></script>
+</body>
+</html>

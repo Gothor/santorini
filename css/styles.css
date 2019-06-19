@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+div {
+  display: inline-block;
+}
+
+#right,
+.toggleView #left {
+  display: none;
+}
+
+.toggleView #right {
+  display: block;
+}
+
+#regles {
+  position: fixed;
+  top: 0;
+  right: -500px;
+  width: 500px;
+  bottom: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: right 0.2s linear;
+  background-color: white;
+}
+
+#regles.visible {
+  right: 0;
+}
+
+#regles .open {
+  position: absolute;
+  left: -20px;
+  top: 50px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  z-index: 20;
+}
